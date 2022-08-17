@@ -25,9 +25,9 @@ void PrintArray(int[] array1)
 {
     for (int i = 0; i < array1.Length; i++)
     {
-        System.Console.Write($"{array1[i]} ");
+        Console.Write($"{array1[i]} ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
 }
 
 int[] array = CreateArray(n);
