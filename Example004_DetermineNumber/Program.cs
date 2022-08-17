@@ -29,16 +29,16 @@ bool ThereIsNumber(int[] array, int n)
 
 void PrinArray(int[] array1)
 {
-    System.Console.WriteLine();
+    Console.WriteLine();
     for (int i = 0; i < array1.Length; i++)
     {
-        System.Console.Write($"{array1[i]} ");
+        Console.Write($"{array1[i]} ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
 }
 int[] array = CreateArray(size, min, max);
 PrinArray(array);
 
 if (ThereIsNumber(array, n)) Result = "Присутствует";
-System.Console.WriteLine($"Число {n} {Result} в массиве");
-System.Console.WriteLine();
+Console.WriteLine($"Число {n} {Result} в массиве");
+Console.WriteLine();
