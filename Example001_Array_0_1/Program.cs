@@ -18,7 +18,7 @@ void PrintArray(int[] array2)
 {
     for (int i = 0; i < array2.Length; i++)
     {
-        System.Console.Write($"{array2[i]} ");
+        Console.Write($"{array2[i]} ");
     }
 }
 
