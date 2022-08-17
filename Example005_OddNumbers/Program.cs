@@ -29,5 +29,4 @@ void PrintResult(int[] array)
     Console.WriteLine($"Количество четных чисел {even}, количество нечетных чисел {oddeven}");
     Console.WriteLine();
 }
-
 PrintResult(FillArray(size));
