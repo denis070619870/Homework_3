@@ -40,5 +40,6 @@ int[] array = CreateArray(size, min, max);
 PrinArray(array);
 
 if (ThereIsNumber(array, n)) Result = "Присутствует";
-Console.WriteLine($"Число {n} {Result} в массиве");
+Console.WriteLine();
+Console.WriteLine($"Число {n} {Result} в массиве.");
 Console.WriteLine();
