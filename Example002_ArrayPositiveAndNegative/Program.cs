@@ -1,7 +1,7 @@
 ﻿// Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
 
-int n = 12;
-int min = 0;
+int n = 5;
+int min = -9;
 int max = 9;
 
 int[] CreateArray(int n, int min, int max)
@@ -22,14 +22,22 @@ void PrintArray(int[] array2)
     }
     Console.WriteLine();
 }
-PrintArray(CreateArray(n, min, max));
 
 int[] Summ(int[] array1)
 {
+    PrintArray(array1);
+
     int[] sum = new int[2];
+    sum[0] = 0;
+    sum[1] = 0;
+
     for (int i = 0; i < array1.Length; i++)
     {
-        if (array1[i] < 0) sum[0] += array1[i];
+        if (array1[i] < 0)
+        {
+            sum[0] += array1[i];
+        }
+        
         else sum[1] += array1[i];
     }
     return sum;
